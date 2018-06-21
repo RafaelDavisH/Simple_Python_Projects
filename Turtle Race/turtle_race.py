@@ -42,45 +42,45 @@ for step in range(16):  # to get the turtle to print from 0 - 5 the range needs 
 
 # create turtles
 
-# Turtle Ray
-ray = Turtle()
-ray.color('blue')
-ray.shape('turtle')
+# Turtle Rae
+rae = Turtle()
+rae.color('blue')
+rae.shape('turtle')
 
-# Turtle Tito
-tito = Turtle()
-tito.color('red')
-tito.shape('turtle')
+# Turtle Bob
+bob = Turtle()
+bob.color('red')
+bob.shape('turtle')
 
 # Turtle Charlie
 charlie = Turtle()
 charlie.color('yellow')
 charlie.shape('turtle')
 
-# Turtle Carito
-carito = Turtle()
-carito.color('pink')
-carito.shape('turtle')
+# Turtle Lady
+lady = Turtle()
+lady.color('pink')
+lady.shape('turtle')
 
 # set turtles to the starting line.
-ray.penup()
-ray.goto(-160, 100)
-ray.pendown()
+rae.penup()
+rae.goto(-160, 100)
+rae.pendown()
 
-tito.penup()
-tito.goto(-160, 70)
-tito.pendown()
+bob.penup()
+bob.goto(-160, 70)
+bob.pendown()
 
 charlie.penup()
 charlie.goto(-160, 40)
 charlie.pendown()
 
-carito.penup()
-carito.goto(-160, 10)
-carito.pendown()
+lady.penup()
+lady.goto(-160, 10)
+lady.pendown()
 
 for turn in range(100):
-    ray.forward(randint(1, 5))
-    tito.forward(randint(1, 5))
+    rae.forward(randint(1, 5))
+    bob.forward(randint(1, 5))
     charlie.forward(randint(1, 5))
-    carito.forward(randint(1, 5))
+    lady.forward(randint(1, 5))
