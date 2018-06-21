@@ -1,7 +1,7 @@
 #!/bin/python3
 
 from turtle import *
-
+from random import randint
 
 # === Build the Race Track
 # write(0)  # turtle draws track markings for the race
@@ -38,3 +38,49 @@ for step in range(16):  # to get the turtle to print from 0 - 5 the range needs 
     left(90)        # -
     forward(20)
 
+# ==== Racing turtles ====
+
+# create turtles
+
+# Turtle Ray
+ray = Turtle()
+ray.color('blue')
+ray.shape('turtle')
+
+# Turtle Tito
+tito = Turtle()
+tito.color('red')
+tito.shape('turtle')
+
+# Turtle Charlie
+charlie = Turtle()
+charlie.color('yellow')
+charlie.shape('turtle')
+
+# Turtle Carito
+carito = Turtle()
+carito.color('pink')
+carito.shape('turtle')
+
+# set turtles to the starting line.
+ray.penup()
+ray.goto(-160, 100)
+ray.pendown()
+
+tito.penup()
+tito.goto(-160, 70)
+tito.pendown()
+
+charlie.penup()
+charlie.goto(-160, 40)
+charlie.pendown()
+
+carito.penup()
+carito.goto(-160, 10)
+carito.pendown()
+
+for turn in range(100):
+    ray.forward(randint(1, 5))
+    tito.forward(randint(1, 5))
+    charlie.forward(randint(1, 5))
+    carito.forward(randint(1, 5))
